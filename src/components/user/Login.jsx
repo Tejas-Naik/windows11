@@ -66,12 +66,11 @@ function Login({ toggleLogin }) {
             <UserProfile name={name} />
           </div>
           <input
-            className="my-5 text-3xl text-white bg-transparent text-center outline-none"
+            className="my-5 text-3xl text-white bg-transparent text-center outline-none focus:outline-none focus:ring-2 focus:ring-blue-500/50 rounded-lg px-4 py-2 transition-all duration-300"
             type="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Enter your name"
-            style={{ caretColor: "transparent" }}
             required
           />
 
@@ -82,7 +81,7 @@ function Login({ toggleLogin }) {
                 id="password"
                 name="password"
                 placeholder="Password"
-                className="input bg-opacity-30 w-full max-w-xs focus:outline-none border-[0.5px] border-b-white mt-4 placeholder-white opacity-100::placeholder"
+                className="input bg-opacity-30 w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-blue-500/50 border-b border-white/50 mt-4 placeholder-white/70 transition-all duration-300"
                 onChange={(e) => setPassword(e.target.value)}
                 value={password}
                 required
